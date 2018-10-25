@@ -1,0 +1,162 @@
+options:
+  buildHeader:
+  - load("@io_bazel_rules_scala//scala:scala_import.bzl", "scala_import")
+  languages: ["java", "scala:2.11.12"]
+  resolverType: "coursier"
+  resolvers:
+  - id: "mavencentral"
+    type: "default"
+    url: https://repo.maven.apache.org/maven2/
+  strictVisibility: true
+  transitivity: exports
+  versionConflictPolicy: highest
+
+dependencies:
+  com.spotify.metrics:
+    semantic-metrics:
+      version: "0.11.5"
+      lang: java
+      modules: ["api", "core"]
+
+  com.google.guava:
+    guava:
+      version: "20.0"
+      lang: java
+
+  com.google.auto.value:
+    auto-value:
+      version: "1.5.3"
+      lang: java
+      processorClasses: ["com.google.auto.value.processor.AutoValueProcessor"]
+
+  com.google.cloud:
+    google-cloud-nio:
+      version: "0.58.0-alpha"
+      lang: java
+
+  com.google.protobuf:
+    protobuf-java-util:
+      version: "3.6.0"
+      lang: java
+
+    protobuf-java:
+      version: "3.6.0"
+      lang: java
+
+  com.google.code.findbugs:
+    jsr305:
+      version: "3.0.2"
+      lang: java
+
+  com.google.apis:
+    google-api-services-ml:
+      version: "v1-rev56-1.24.1"
+      lang: java
+
+  com.google.api-client:
+    google-api-client:
+      version: "1.24.1"
+      lang: java
+
+  com.google.http-client:
+    google-http-client:
+      version: "1.24.1"
+      lang: java
+
+  com.google.oauth-client:
+    google-oauth-client:
+      version: "1.24.1"
+      lang: java
+
+  org.tensorflow:
+    #    tensorflow:
+    #      version: "1.11.0"
+    #      lang: java
+    libtensorflow:
+      version: "1.11.0"
+      lang: java
+    libtensorflow_jni:
+      version: "1.11.0"
+      lang: java
+    proto:
+      version: "1.11.0"
+      lang: java
+
+  com.spotify:
+    completable-futures:
+      version: "0.3.2"
+      lang: java
+    scio:
+      version: "0.5.7"
+      lang: scala
+      modules: ["core", "test", "bigquery", "tensorflow"]
+    featran:
+      version: "0.2.1"
+      lang: scala
+      modules: ["core", "scio", "tensorflow"]
+    featran-core_2.11:
+      version: "0.2.1"
+      lang: java
+    featran-java_2.11:
+      version: "0.2.1"
+      lang: java
+    featran-xgboost_2.11:
+      version: "0.2.1"
+      lang: java
+
+  org.slf4j:
+    slf4j-api:
+      version: "1.7.25"
+      lang: java
+
+  com.fasterxml.jackson.core:
+    jackson:
+      version: "2.9.5"
+      lang: java
+      modules: ["core", "databind"]
+
+  ml.dmlc:
+    xgboost4j:
+      version: "0.80"
+      lang: java
+
+  com.esotericsoftware.kryo:
+    kryo:
+      version: "2.21"
+      lang: java
+
+  com.codahale.metrics:
+    metrics-core:
+      version: "3.0.2"
+      lang: java
+
+  org.scalamacros:
+    paradise_2.11.12:
+      lang: java
+      version: "2.1.1"
+
+  junit:
+    junit:
+      lang: java
+      version: "4.12"
+
+replacements:
+  org.scala-lang:
+    scala-compiler:
+      lang: scala/unmangled
+      target: "@io_bazel_rules_scala_scala_compiler//:io_bazel_rules_scala_scala_compiler"
+    scala-library:
+      lang: scala/unmangled
+      target: "@io_bazel_rules_scala_scala_library//:io_bazel_rules_scala_scala_library"
+    scala-reflect:
+      lang: scala/unmangled
+      target: "@io_bazel_rules_scala_scala_reflect//:io_bazel_rules_scala_scala_reflect"
+
+  org.scala-lang.modules:
+    scala-parser-combinators:
+      lang: scala
+      target:
+        "@io_bazel_rules_scala_scala_parser_combinators//:io_bazel_rules_scala_scala_parser_combinators"
+    scala-xml:
+      lang: scala
+      target: "@io_bazel_rules_scala_scala_xml//:io_bazel_rules_scala_scala_xml"

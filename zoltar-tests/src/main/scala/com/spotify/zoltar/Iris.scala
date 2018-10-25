@@ -22,14 +22,10 @@ import com.spotify.featran.scio._
 import com.spotify.featran.tensorflow._
 import com.spotify.featran.transformers._
 import com.spotify.scio._
-import com.spotify.scio.bigquery._
 import com.spotify.scio.tensorflow._
 import org.tensorflow.example.{Example => TFExample}
 
 object IrisFeaturesSpec {
-
-  @BigQueryType.fromTable("data-integration-test:zoltar.iris")
-  class Record
 
   case class Iris(sepalLength: Option[Double],
                   sepalWidth: Option[Double],
@@ -38,7 +34,7 @@ object IrisFeaturesSpec {
                   className: Option[String])
 
   object Iris {
-    def apply(record: Record): Iris =
+    def apply(record: Tables.Record): Iris =
       Iris(record.petal_length,
            record.petal_width,
            record.sepal_length,
@@ -66,7 +62,7 @@ object IrisFeaturesJob {
 
     val (sc, args) = ContextAndArgs(cmdLineArgs)
 
-    val data = sc.typedBigQuery[Record]().map(Iris(_))
+    val data = sc.typedBigQuery[Tables.Record]().map(Iris(_))
     val extractedFeatures = irisSpec.extract(data)
 
     val (train, test) = extractedFeatures

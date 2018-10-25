@@ -1,0 +1,12 @@
+load("@io_bazel_rules_scala//scala:scala_import.bzl", "scala_import")
+java_library(
+    name = "args4j",
+    exports = [
+        "//external:jar/args4j/args4j"
+    ],
+    visibility = [
+        "//3rdparty/jvm:__subpackages__"
+    ]
+)
+
+
