@@ -6,7 +6,7 @@ java_library(
         "//external:jar/pl/edu/icm/JLargeArrays"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

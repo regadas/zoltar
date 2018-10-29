@@ -10,7 +10,7 @@ java_library(
         ":google_auth_library_oauth2_http"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -22,7 +22,7 @@ java_library(
         "//external:jar/com/google/auth/google_auth_library_credentials"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -38,7 +38,7 @@ java_library(
         ":google_auth_library_credentials"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

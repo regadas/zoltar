@@ -9,7 +9,7 @@ scala_import(
         "//external:jar/org/typelevel/algebra_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -27,7 +27,7 @@ scala_import(
         "//external:jar/org/typelevel/cats_core_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -42,7 +42,7 @@ scala_import(
         "//external:jar/org/typelevel/cats_kernel_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -58,7 +58,7 @@ scala_import(
         "//external:jar/org/typelevel/cats_macros_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -74,7 +74,7 @@ scala_import(
         "//external:jar/org/typelevel/machinist_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -89,7 +89,7 @@ scala_import(
         "//external:jar/org/typelevel/macro_compat_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

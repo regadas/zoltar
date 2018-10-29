@@ -20,7 +20,7 @@ java_library(
         ":metrics_core"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

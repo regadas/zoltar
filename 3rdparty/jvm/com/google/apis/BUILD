@@ -6,7 +6,7 @@ java_library(
         "//external:jar/com/google/apis/google_api_services_bigquery"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -19,7 +19,7 @@ java_library(
         "//external:jar/com/google/apis/google_api_services_cloudresourcemanager"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -45,7 +45,7 @@ java_library(
         "//external:jar/com/google/apis/google_api_services_pubsub"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -58,7 +58,7 @@ java_library(
         "//external:jar/com/google/apis/google_api_services_storage"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

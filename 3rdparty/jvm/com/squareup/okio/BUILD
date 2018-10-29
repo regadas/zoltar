@@ -5,7 +5,7 @@ java_library(
         "//external:jar/com/squareup/okio/okio"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

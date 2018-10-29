@@ -8,7 +8,7 @@ scala_import(
         "//external:jar/org/spire_math/jawn_parser_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -25,7 +25,7 @@ scala_import(
         "//external:jar/org/spire_math/spire_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -41,7 +41,7 @@ scala_import(
         "//external:jar/org/spire_math/spire_macros_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

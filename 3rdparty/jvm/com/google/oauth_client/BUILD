@@ -20,7 +20,7 @@ java_library(
         ":google_oauth_client"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

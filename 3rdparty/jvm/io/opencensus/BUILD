@@ -7,7 +7,7 @@ java_library(
         "//external:jar/io/opencensus/opencensus_api"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -23,7 +23,7 @@ java_library(
         ":opencensus_api"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -37,7 +37,7 @@ java_library(
         ":opencensus_api"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

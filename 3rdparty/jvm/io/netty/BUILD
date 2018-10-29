@@ -6,7 +6,7 @@ java_library(
         ":netty_common"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -19,7 +19,7 @@ java_library(
         ":netty_transport"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -32,7 +32,7 @@ java_library(
         ":netty_codec"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -46,7 +46,7 @@ java_library(
         ":netty_handler"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -59,7 +59,7 @@ java_library(
         ":netty_codec"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -71,7 +71,7 @@ java_library(
         "//external:jar/io/netty/netty_common"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -86,7 +86,7 @@ java_library(
         ":netty_transport"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -101,7 +101,7 @@ java_library(
         ":netty_transport"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -114,7 +114,7 @@ java_library(
         ":netty_common"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -126,7 +126,7 @@ java_library(
         "//external:jar/io/netty/netty_tcnative_boringssl_static"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -140,7 +140,7 @@ java_library(
         ":netty_resolver"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

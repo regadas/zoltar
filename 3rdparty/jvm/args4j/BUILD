@@ -5,7 +5,7 @@ java_library(
         "//external:jar/args4j/args4j"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

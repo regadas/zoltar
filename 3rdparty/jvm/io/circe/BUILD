@@ -10,7 +10,7 @@ scala_import(
         "//external:jar/io/circe/circe_core_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -28,7 +28,7 @@ scala_import(
         "//external:jar/io/circe/circe_generic_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -45,7 +45,7 @@ scala_import(
         "//external:jar/io/circe/circe_jawn_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -60,7 +60,7 @@ scala_import(
         "//external:jar/io/circe/circe_numbers_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -77,7 +77,7 @@ scala_import(
         "//external:jar/io/circe/circe_parser_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

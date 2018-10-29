@@ -113,7 +113,7 @@ scala_import(
         "//external:jar/com/spotify/scio_avro_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -239,7 +239,7 @@ java_library(
         ":zoltar_core"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -255,7 +255,7 @@ java_library(
         "//external:jar/com/spotify/zoltar_core"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -275,7 +275,7 @@ java_library(
         ":zoltar_core"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

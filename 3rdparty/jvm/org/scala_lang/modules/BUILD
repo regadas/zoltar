@@ -5,7 +5,7 @@ scala_library(
         "@io_bazel_rules_scala_scala_parser_combinators//:io_bazel_rules_scala_scala_parser_combinators"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -17,7 +17,7 @@ scala_library(
         "@io_bazel_rules_scala_scala_xml//:io_bazel_rules_scala_scala_xml"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

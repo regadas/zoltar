@@ -5,7 +5,7 @@ scala_library(
         "@io_bazel_rules_scala_scala_compiler//:io_bazel_rules_scala_scala_compiler"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -17,7 +17,7 @@ scala_library(
         "@io_bazel_rules_scala_scala_library//:io_bazel_rules_scala_scala_library"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -29,7 +29,7 @@ scala_library(
         "@io_bazel_rules_scala_scala_reflect//:io_bazel_rules_scala_scala_reflect"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

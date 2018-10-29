@@ -6,7 +6,7 @@ java_library(
         "//external:jar/com/esotericsoftware/reflectasm/reflectasm_jar_shaded"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

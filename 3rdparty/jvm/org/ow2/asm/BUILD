@@ -5,7 +5,7 @@ java_library(
         "//external:jar/org/ow2/asm/asm"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

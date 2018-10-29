@@ -5,7 +5,7 @@ java_library(
         "//external:jar/org/objenesis/objenesis"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

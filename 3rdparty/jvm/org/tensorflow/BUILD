@@ -44,7 +44,7 @@ java_library(
         ":libtensorflow_jni"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

@@ -5,7 +5,7 @@ java_library(
         "//external:jar/net/sf/opencsv/opencsv"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

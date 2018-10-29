@@ -9,7 +9,7 @@ scala_import(
         "//external:jar/com/typesafe/akka/akka_actor_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

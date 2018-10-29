@@ -25,6 +25,7 @@ import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
 import com.google.common.collect.ImmutableMap;
+import com.google.common.io.Resources;
 import com.spotify.futures.CompletableFutures;
 import com.spotify.zoltar.FeatureExtractFns.ExtractFn;
 import com.spotify.zoltar.IrisFeaturesSpec;
@@ -37,6 +38,7 @@ import com.spotify.zoltar.PredictorsTest;
 import com.spotify.zoltar.featran.FeatranExtractFns;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -57,7 +59,7 @@ public class XGBoostModelTest {
 
   public static Predictor<Iris, Long> getXGBoostIrisPredictor() throws Exception {
     final URI trainedModelUri = XGBoostModelTest.class.getResource("/iris.model").toURI();
-    final URI settingsUri = XGBoostModelTest.class.getResource("/settings.json").toURI();
+    final URL settingsUri = XGBoostModelTest.class.getResource("/settings.json");
 
     final XGBoostPredictFn<Iris, LabeledPoint, Long> predictFn = (model, vectors) -> {
       final List<CompletableFuture<Prediction<Iris, Long>>> predictions =
@@ -81,8 +83,7 @@ public class XGBoostModelTest {
       return CompletableFutures.allAsList(predictions);
     };
 
-    final String settings = new String(Files.readAllBytes(Paths.get(settingsUri)),
-                                       StandardCharsets.UTF_8);
+    final String settings = Resources.toString(settingsUri, StandardCharsets.UTF_8);
     final XGBoostLoader model = XGBoostLoader.create(trainedModelUri.toString());
 
     final ExtractFn<Iris, LabeledPoint> extractFn = FeatranExtractFns

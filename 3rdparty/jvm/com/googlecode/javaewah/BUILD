@@ -5,7 +5,7 @@ java_library(
         "//external:jar/com/googlecode/javaewah/JavaEWAH"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

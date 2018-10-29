@@ -5,7 +5,7 @@ java_library(
         "//external:jar/org/scala_sbt/test_interface"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

@@ -10,7 +10,7 @@ scala_import(
         "//external:jar/com/github/alexarchambault/case_app_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -25,7 +25,7 @@ scala_import(
         "//external:jar/com/github/alexarchambault/case_app_annotations_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -42,7 +42,7 @@ scala_import(
         "//external:jar/com/github/alexarchambault/case_app_util_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

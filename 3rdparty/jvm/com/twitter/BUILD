@@ -11,7 +11,7 @@ scala_import(
         "//external:jar/com/twitter/algebird_core_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -28,7 +28,7 @@ scala_import(
         "//external:jar/com/twitter/chill_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -46,7 +46,7 @@ scala_import(
         "//external:jar/com/twitter/chill_algebird_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -59,7 +59,7 @@ java_library(
         "//external:jar/com/twitter/chill_java"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -73,7 +73,7 @@ java_library(
         ":chill_java"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

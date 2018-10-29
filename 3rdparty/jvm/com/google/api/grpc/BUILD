@@ -8,7 +8,7 @@ java_library(
         ":proto_google_cloud_pubsub_v1"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -23,7 +23,7 @@ java_library(
         ":proto_google_common_protos"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -38,7 +38,7 @@ java_library(
         ":proto_google_iam_v1"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -51,7 +51,7 @@ java_library(
         "//external:jar/com/google/api/grpc/proto_google_common_protos"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -66,7 +66,7 @@ java_library(
         ":proto_google_common_protos"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

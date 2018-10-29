@@ -17,7 +17,7 @@ scala_import(
         "//external:jar/org/scalanlp/breeze_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -33,7 +33,7 @@ scala_import(
         "//external:jar/org/scalanlp/breeze_macros_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

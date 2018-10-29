@@ -12,9 +12,13 @@ scala_library(
       "//3rdparty/jvm/org/tensorflow:proto",
       ":iris_bq"
       ],
+      exports = [
+        ":iris_bq"
+      ],
     visibility = ["//visibility:public"])
 
 bigquery_schema(
     name = "iris_bq",
-    srcs = ["Tables.scala"]
+    srcs = ["Tables.scala"],
+    visibility = ["//zoltar-tests:__subpackages__"]
 )

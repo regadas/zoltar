@@ -6,7 +6,7 @@ java_library(
         "//external:jar/io/dropwizard/metrics/metrics_core"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

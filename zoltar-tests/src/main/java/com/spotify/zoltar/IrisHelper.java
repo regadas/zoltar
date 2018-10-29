@@ -20,7 +20,10 @@
 
 package com.spotify.zoltar;
 
+import com.google.common.io.Resources;
 import java.net.URI;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import scala.Option;
@@ -46,8 +49,8 @@ public class IrisHelper {
    * Get Iris test data.
    */
   public static IrisFeaturesSpec.Iris[] getIrisTestData() throws Exception {
-    final URI data = IrisHelper.class.getResource("/iris.csv").toURI();
-    return Files.readAllLines(Paths.get(data))
+    final URL data = IrisHelper.class.getResource("/iris.csv");
+    return Resources.readLines(data, StandardCharsets.UTF_8)
         .stream()
         .map(IrisHelper::fromCsvString)
         .toArray(IrisFeaturesSpec.Iris[]::new);

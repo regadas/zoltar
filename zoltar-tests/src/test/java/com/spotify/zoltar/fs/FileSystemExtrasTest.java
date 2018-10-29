@@ -37,13 +37,14 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 import org.junit.Test;
 
 public class FileSystemExtrasTest {
 
   @Test
-  public void localPath() {
+  public void localPath() throws IOException {
     final Path noSchema = FileSystemExtras.path(URI.create("/tmp"));
     assertNotNull(noSchema);
 
@@ -52,7 +53,7 @@ public class FileSystemExtrasTest {
   }
 
   @Test(expected = IllegalArgumentException.class)
-  public void invalidGcsBucketUri() {
+  public void invalidGcsBucketUri() throws IOException {
     FileSystemExtras.path(URI.create("gs://bucket_name"));
     fail("Should throw exception; bucket name is not rfc 2396 compliant");
   }
@@ -102,7 +103,8 @@ public class FileSystemExtrasTest {
     assertTrue(path.toFile().isDirectory());
     assertTrue(path.toFile().getName().startsWith("zoltar"));
 
-    final List<String> dirContents = Arrays.stream(path.toFile().listFiles())
+    final List<String> dirContents = Arrays.stream(
+        Objects.requireNonNull(path.toFile().listFiles()))
         .map(File::getName)
         .collect(Collectors.toList());
 

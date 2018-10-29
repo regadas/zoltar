@@ -9,6 +9,6 @@ java_library(
         "//3rdparty/jvm/com/spotify:featran_xgboost_2_11",
         "//3rdparty/jvm/org/tensorflow:proto",
         "//3rdparty/jvm/ml/dmlc:xgboost4j",
-        "//zoltar-core"
+        "//zoltar-core",
         ],
 )

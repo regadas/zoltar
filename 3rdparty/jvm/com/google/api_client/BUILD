@@ -22,7 +22,7 @@ java_library(
         ":google_api_client"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -36,7 +36,7 @@ java_library(
         ":google_api_client"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

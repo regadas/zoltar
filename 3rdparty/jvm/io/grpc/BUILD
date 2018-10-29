@@ -13,7 +13,7 @@ java_library(
         ":grpc_stub"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -27,7 +27,7 @@ java_library(
         ":grpc_core"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -39,7 +39,7 @@ java_library(
         "//external:jar/io/grpc/grpc_context"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -57,7 +57,7 @@ java_library(
         ":grpc_context"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -72,7 +72,7 @@ java_library(
         ":grpc_core"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -87,7 +87,7 @@ java_library(
         ":grpc_core"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -105,7 +105,7 @@ java_library(
         ":grpc_protobuf_lite"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -119,7 +119,7 @@ java_library(
         ":grpc_core"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -134,7 +134,7 @@ java_library(
         ":grpc_core"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -147,7 +147,7 @@ java_library(
         ":grpc_core"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

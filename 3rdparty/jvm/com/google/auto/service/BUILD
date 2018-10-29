@@ -7,7 +7,7 @@ java_library(
         "//external:jar/com/google/auto/service/auto_service"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

@@ -20,7 +20,7 @@ java_library(
         ":google_http_client"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -34,7 +34,7 @@ java_library(
         ":google_http_client"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -48,7 +48,7 @@ java_library(
         ":google_http_client"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -62,7 +62,7 @@ java_library(
         ":google_http_client"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

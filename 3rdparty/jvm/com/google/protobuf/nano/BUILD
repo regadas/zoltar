@@ -5,7 +5,7 @@ java_library(
         "//external:jar/com/google/protobuf/nano/protobuf_javanano"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

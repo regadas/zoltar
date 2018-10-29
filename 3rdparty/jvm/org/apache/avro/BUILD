@@ -12,7 +12,7 @@ java_library(
         "//external:jar/org/apache/avro/avro"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -31,7 +31,7 @@ java_library(
         ":avro"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

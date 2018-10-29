@@ -9,7 +9,7 @@ scala_import(
         "//external:jar/me/lyh/protobuf_generic_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -25,7 +25,7 @@ scala_import(
         "//external:jar/me/lyh/shapeless_datatype_core_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -42,7 +42,7 @@ scala_import(
         "//external:jar/me/lyh/shapeless_datatype_tensorflow_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

@@ -7,7 +7,7 @@ java_library(
         "//external:jar/com/google/api/api_common"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -24,7 +24,7 @@ java_library(
         ":api_common"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -48,7 +48,7 @@ java_library(
         ":gax"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -69,7 +69,7 @@ java_library(
         ":gax"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

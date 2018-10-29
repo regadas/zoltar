@@ -5,7 +5,7 @@ java_library(
         "//external:jar/commons_codec/commons_codec"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

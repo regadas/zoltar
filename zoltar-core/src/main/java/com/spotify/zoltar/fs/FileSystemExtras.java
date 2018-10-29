@@ -24,13 +24,17 @@ import com.google.cloud.storage.contrib.nio.CloudStorageFileSystem;
 import java.io.IOException;
 import java.net.URI;
 import java.nio.file.CopyOption;
+import java.nio.file.FileSystem;
+import java.nio.file.FileSystemNotFoundException;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.time.LocalDate;
+import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
@@ -59,10 +63,25 @@ public final class FileSystemExtras {
   /**
    * Creates a {@link Path} given a {@link URI} in a user-friendly and safe way.
    */
-  public static Path path(final URI uri) {
+  public static Path path(final URI uri) throws IOException {
     // uri with no scheme might be a local path
     if (uri.getScheme() == null) {
       return Paths.get(uri.toString());
+    }
+
+    if (uri.getScheme().startsWith("jar")) {
+      FileSystem fileSystem;
+      final String[] split = uri.toString().split("!");
+      final URI jarUri = URI.create(split[0]);
+      final Map<String, String> env = Collections.singletonMap("create", "true");
+
+      try {
+        fileSystem = FileSystems.getFileSystem(jarUri);
+      } catch (FileSystemNotFoundException e) {
+        fileSystem = FileSystems.newFileSystem(jarUri, env);
+      }
+
+      fileSystem.getPath(split[1]);
     }
 
     try {
@@ -98,17 +117,18 @@ public final class FileSystemExtras {
 
   static Path copyDir(final Path src, final Path dest, final boolean overwrite)
       throws IOException {
+
     final List<URI> uris = Files.walk(src)
         .filter(path -> !path.equals(src))
         .map(Path::toUri)
         .collect(Collectors.toList());
 
     for (final URI uri : uris) {
-      final String relative =
-          uri.toString().substring(src.toUri().toString().length(), uri.toString().length());
+      final String relative = uri.toString().substring(src.toUri().toString().length());
       final Path fullDst = Paths.get(dest.toUri().resolve(relative));
       final CopyOption[] flags = overwrite ? new CopyOption[]{StandardCopyOption.REPLACE_EXISTING}
           : new CopyOption[]{};
+
       Files.copy(Paths.get(uri), fullDst, flags);
     }
 

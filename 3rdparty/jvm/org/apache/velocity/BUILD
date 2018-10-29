@@ -7,7 +7,7 @@ java_library(
         "//external:jar/org/apache/velocity/velocity"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

@@ -5,7 +5,7 @@ java_library(
         "//external:jar/org/codehaus/jackson/jackson_core_asl"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -18,7 +18,7 @@ java_library(
         ":jackson_core_asl"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

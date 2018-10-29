@@ -8,7 +8,7 @@ java_library(
         ":httpcore"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -20,7 +20,7 @@ java_library(
         "//external:jar/org/apache/httpcomponents/httpcore"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

@@ -5,7 +5,7 @@ java_library(
         "//external:jar/org/joda/joda_convert"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

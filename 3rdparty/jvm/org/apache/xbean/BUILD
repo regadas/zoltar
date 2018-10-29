@@ -5,7 +5,7 @@ java_library(
         "//external:jar/org/apache/xbean/xbean_asm5_shaded"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

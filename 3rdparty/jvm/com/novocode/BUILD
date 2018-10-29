@@ -7,7 +7,7 @@ java_library(
         "//external:jar/com/novocode/junit_interface"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

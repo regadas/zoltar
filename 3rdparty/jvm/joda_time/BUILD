@@ -5,7 +5,7 @@ java_library(
         "//external:jar/joda_time/joda_time"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

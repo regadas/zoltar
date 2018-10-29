@@ -5,7 +5,7 @@ java_library(
         "//external:jar/org/apache/commons/commons_compress"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -17,7 +17,7 @@ java_library(
         "//external:jar/org/apache/commons/commons_math3"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

@@ -6,7 +6,7 @@ java_library(
         "//external:jar/com/squareup/okhttp/okhttp"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

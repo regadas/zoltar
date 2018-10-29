@@ -7,7 +7,7 @@ java_library(
         "//external:jar/com/fasterxml/jackson/module/jackson_module_paranamer"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -27,7 +27,7 @@ scala_import(
         "//external:jar/com/fasterxml/jackson/module/jackson_module_scala_2_11"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

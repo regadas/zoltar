@@ -1,5 +1,12 @@
-java_library(
+#java_library(
+#    name = "resources",
+#    resources = glob(["**/*"]),
+#    visibility = ["//zoltar-tests:__subpackages__"],
+#)
+
+filegroup(
     name = "resources",
-    resources = glob(["**/*"]),
+    testonly = 1,
+    srcs = glob(["**/*"]),
     visibility = ["//zoltar-tests:__subpackages__"],
 )

@@ -69,9 +69,9 @@ dependencies:
       lang: java
 
   org.tensorflow:
-    #    tensorflow:
-    #      version: "1.11.0"
-    #      lang: java
+    tensorflow:
+      version: "1.11.0"
+      lang: java
     libtensorflow:
       version: "1.11.0"
       lang: java
@@ -139,6 +139,11 @@ dependencies:
     junit:
       lang: java
       version: "4.12"
+
+  org.hamcrest:
+    hamcrest-all:
+      lang: java
+      version: "1.3"
 
 replacements:
   org.scala-lang:

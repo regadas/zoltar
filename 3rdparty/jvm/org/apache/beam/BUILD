@@ -6,7 +6,7 @@ java_library(
         "//external:jar/org/apache/beam/beam_model_pipeline"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -23,7 +23,7 @@ java_library(
         ":beam_sdks_java_core"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -43,7 +43,7 @@ java_library(
         "//external:jar/org/apache/beam/beam_sdks_java_core"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -69,7 +69,7 @@ java_library(
         ":beam_sdks_java_core"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -83,7 +83,7 @@ java_library(
         ":beam_sdks_java_core"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -127,7 +127,7 @@ java_library(
         ":beam_sdks_java_extensions_protobuf"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

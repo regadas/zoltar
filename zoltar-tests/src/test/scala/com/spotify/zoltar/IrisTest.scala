@@ -22,7 +22,7 @@ import java.util.concurrent.ThreadLocalRandom
 
 import com.spotify.scio.tensorflow.TFExampleIO
 import com.spotify.scio.testing._
-import com.spotify.zoltar.IrisFeaturesSpec.Record
+import com.spotify.zoltar.Tables.Record
 import org.apache.commons.io.IOUtils
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner

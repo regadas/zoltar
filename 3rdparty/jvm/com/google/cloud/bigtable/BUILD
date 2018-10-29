@@ -22,7 +22,7 @@ java_library(
         ":bigtable_protos"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -41,7 +41,7 @@ java_library(
         "//external:jar/com/google/cloud/bigtable/bigtable_protos"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

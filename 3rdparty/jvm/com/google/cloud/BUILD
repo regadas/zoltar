@@ -14,7 +14,7 @@ java_library(
         "//external:jar/com/google/cloud/google_cloud_core"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -31,7 +31,7 @@ java_library(
         "//external:jar/com/google/cloud/google_cloud_core_grpc"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -56,7 +56,7 @@ java_library(
         ":google_cloud_core"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -87,7 +87,7 @@ java_library(
         ":google_cloud_core_http"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 

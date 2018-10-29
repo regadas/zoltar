@@ -13,7 +13,7 @@ java_library(
         ":util"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
@@ -32,7 +32,7 @@ java_library(
         "//external:jar/com/google/cloud/bigdataoss/util"
     ],
     visibility = [
-        "//3rdparty/jvm:__subpackages__"
+        "//visibility:public"
     ]
 )
 
